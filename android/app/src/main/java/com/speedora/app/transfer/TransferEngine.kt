@@ -372,7 +372,7 @@ class SpeedoraTransferSessionRunner {
                 dataOut, FrameType.KEY_EXCHANGE, outSeq++,
                 json.encodeToString(KeyExchangePayload(SpeedoraCrypto.encodePublicKeyBase64(keyPair.public))).toByteArray()
             )
-            val keys = SpeedoraCrypto.deriveSessionKeys(keyPair, peerPublicKey = peerKey, sessionId = sessionId)
+            val keys = SpeedoraCrypto.deriveSessionKeys(keyPair, remotePublicKey = peerKey, sessionId = sessionId)
 
             // Receive encrypted transfer offer
             val offerFrame = TransferProtocol.readFrame(dataIn)
