@@ -29,7 +29,7 @@ class SelectionAndCategorizerTest {
     fun `selection manager persists selections across categories and computes byte totals`() {
         val manager = SelectionManager()
         val photo = LocalFileItem("1", testUri(), "a.jpg", 1024L, "image/jpeg", FileCategory.PHOTOS, 100L)
-        val doc = LocalFileItem("2", Uri.EMPTY, "b.pdf", 2048L, "application/pdf", FileCategory.DOCUMENTS, 200L)
+        val doc = LocalFileItem("2", testUri(), "b.pdf", 2048L, "application/pdf", FileCategory.DOCUMENTS, 200L)
 
         manager.toggle(photo)
         manager.toggle(doc)
@@ -46,8 +46,8 @@ class SelectionAndCategorizerTest {
 
     @Test
     fun `sorting and size formatting produce expected results`() {
-        val a = LocalFileItem("1", Uri.EMPTY, "zeta.txt", 100L, "text/plain", FileCategory.DOCUMENTS, 10L)
-        val b = LocalFileItem("2", Uri.EMPTY, "alpha.txt", 500L, "text/plain", FileCategory.DOCUMENTS, 50L)
+        val a = LocalFileItem("1", testUri(), "zeta.txt", 100L, "text/plain", FileCategory.DOCUMENTS, 10L)
+        val b = LocalFileItem("2", testUri(), "alpha.txt", 500L, "text/plain", FileCategory.DOCUMENTS, 50L)
 
         assertThat(FileCategorizer.sortFiles(listOf(a, b), SortOrder.LARGEST).first().id).isEqualTo("2")
         assertThat(FileCategorizer.sortFiles(listOf(a, b), SortOrder.NAME_ASC).first().id).isEqualTo("2")
