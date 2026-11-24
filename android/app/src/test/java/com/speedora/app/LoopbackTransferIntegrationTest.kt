@@ -9,8 +9,10 @@ import com.speedora.app.transfer.SpeedoraTransferSessionRunner
 import com.speedora.app.transfer.TransferAcceptPayload
 import com.speedora.app.transfer.TransferSink
 import com.speedora.app.transfer.TransferSource
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.withTimeout
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.TemporaryFolder
@@ -65,7 +67,7 @@ class LoopbackTransferIntegrationTest {
         var senderSas = ""
         var receiverSas = ""
 
-        val receiverJob = async {
+        val receiverJob = async(Dispatchers.IO) {
             server.accept().use { client ->
                 val runner = SpeedoraTransferSessionRunner()
                 runner.runReceiveSession(
@@ -84,7 +86,7 @@ class LoopbackTransferIntegrationTest {
             }
         }
 
-        val senderJob = async {
+        val senderJob = async(Dispatchers.IO) {
             Socket("127.0.0.1", port).use { sock ->
                 val runner = SpeedoraTransferSessionRunner()
                 runner.runSendSession(
@@ -102,8 +104,9 @@ class LoopbackTransferIntegrationTest {
             }
         }
 
-        val sendResult = senderJob.await()
-        val receiveResult = receiverJob.await()
+        val (sendResult, receiveResult) = withTimeout(30_000) {
+            senderJob.await() to receiverJob.await()
+        }
         server.close()
 
         assertThat(sendResult.isSuccess).isTrue()
@@ -142,7 +145,7 @@ class LoopbackTransferIntegrationTest {
         val server = ServerSocket(0)
         val port = server.localPort
 
-        val rx = async {
+        val rx = async(Dispatchers.IO) {
             server.accept().use { client ->
                 SpeedoraTransferSessionRunner().runReceiveSession(
                     inputRaw = client.getInputStream(),
@@ -156,7 +159,7 @@ class LoopbackTransferIntegrationTest {
                 )
             }
         }
-        val tx = async {
+        val tx = async(Dispatchers.IO) {
             Socket("127.0.0.1", port).use { sock ->
                 SpeedoraTransferSessionRunner().runSendSession(
                     inputRaw = sock.getInputStream(),
@@ -172,8 +175,9 @@ class LoopbackTransferIntegrationTest {
             }
         }
 
-        assertThat(tx.await().isFailure).isTrue()
-        assertThat(rx.await().isFailure).isTrue()
+        val (sendResult, receiveResult) = withTimeout(30_000) { tx.await() to rx.await() }
+        assertThat(sendResult.isFailure).isTrue()
+        assertThat(receiveResult.isFailure).isTrue()
         assertThat(destDir.listFiles()).isEmpty()
         server.close()
     }
