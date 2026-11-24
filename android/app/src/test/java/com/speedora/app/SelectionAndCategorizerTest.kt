@@ -9,8 +9,11 @@ import com.speedora.app.core.model.SortOrder
 import com.speedora.app.data.files.FileCategorizer
 import com.speedora.app.data.files.SelectionManager
 import org.junit.Test
+import org.mockito.Mockito
 
 class SelectionAndCategorizerTest {
+
+    private fun testUri(): Uri = Mockito.mock(Uri::class.java)
 
     @Test
     fun `categorizes extensions and mime types accurately`() {
@@ -25,7 +28,7 @@ class SelectionAndCategorizerTest {
     @Test
     fun `selection manager persists selections across categories and computes byte totals`() {
         val manager = SelectionManager()
-        val photo = LocalFileItem("1", Uri.EMPTY, "a.jpg", 1024L, "image/jpeg", FileCategory.PHOTOS, 100L)
+        val photo = LocalFileItem("1", testUri(), "a.jpg", 1024L, "image/jpeg", FileCategory.PHOTOS, 100L)
         val doc = LocalFileItem("2", Uri.EMPTY, "b.pdf", 2048L, "application/pdf", FileCategory.DOCUMENTS, 200L)
 
         manager.toggle(photo)
