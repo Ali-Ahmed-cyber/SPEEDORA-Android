@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SPEEDORA</string>
+    <string name="slogan">نقل أسرع. اتصال أذكى.</string>
+    <string name="slogan_en">FASTER. SMARTER. CONNECTED.</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_send">إرسال</string>
+    <string name="nav_receive">استلام</string>
+    <string name="nav_files">الملفات</string>
+
+    <!-- Actions -->
+    <string name="action_send">إرسال</string>
+    <string name="action_receive">استلام</string>
+    <string name="action_continue">متابعة</string>
+    <string name="action_cancel">إلغاء</string>
+    <string name="action_pause">إيقاف مؤقت</string>
+    <string name="action_resume">استئناف</string>
+    <string name="action_accept">قبول</string>
+    <string name="action_reject">رفض</string>
+    <string name="action_retry">إعادة المحاولة</string>
+    <string name="action_clear_all">مسح الكل</string>
+    <string name="action_select_all">تحديد الكل</string>
+    <string name="action_scan_qr">مسح رمز QR</string>
+    <string name="action_show_qr">عرض رمز QR</string>
+    <string name="action_grant_permission">منح الإذن</string>
+    <string name="action_delete">حذف</string>
+    <string name="action_rename">إعادة تسمية</string>
+    <string name="action_share">مشاركة</string>
+
+    <!-- Home -->
+    <string name="home_status_idle">جاهز للاتصال المحلي المباشر</string>
+    <string name="home_status_discovering">جاري البحث عن الأجهزة القريبة…</string>
+    <string name="home_status_advertising">الجهاز ظاهر للاستلام الآمن</string>
+    <string name="home_status_connected">متصل بجهاز: %1$s</string>
+    <string name="home_measured_speed">السرعة المقاسة فعلياً: %1$s</string>
+    <string name="home_no_speed_yet">تُعرض السرعة الفعلية أثناء النقل النشط</string>
+    <string name="home_quick_access">الوصول السريع</string>
+    <string name="home_recent_transfers">عمليات النقل الأخيرة</string>
+    <string name="home_trusted_devices">الأجهزة الموثوقة</string>
+    <string name="home_no_recent_transfers">لا توجد عمليات نقل مسجلة بعد</string>
+    <string name="home_no_trusted_devices">لم تتم إضافة أجهزة موثوقة بعد</string>
+
+    <!-- Quick Destinations -->
+    <string name="dest_apps">التطبيقات</string>
+    <string name="dest_history">السجل</string>
+    <string name="dest_migration">نقل الهاتف</string>
+    <string name="dest_favorites">المفضلة</string>
+    <string name="dest_trusted">الموثوقة</string>
+    <string name="dest_settings">الإعدادات</string>
+    <string name="dest_discovery">اكتشاف الأجهزة</string>
+
+    <!-- File Categories -->
+    <string name="cat_all">كل الملفات</string>
+    <string name="cat_photos">الصور</string>
+    <string name="cat_videos">الفيديو</string>
+    <string name="cat_music">الصوتيات</string>
+    <string name="cat_apps">التطبيقات</string>
+    <string name="cat_documents">المستندات</string>
+    <string name="cat_archives">المضغوطة</string>
+    <string name="cat_downloads">التنزيلات</string>
+    <string name="cat_folders">المجلدات</string>
+    <string name="cat_recent">الأخيرة</string>
+
+    <!-- Sorting & Search -->
+    <string name="search_files_hint">ابحث باسم الملف…</string>
+    <string name="sort_newest">الأحدث أولاً</string>
+    <string name="sort_oldest">الأقدم أولاً</string>
+    <string name="sort_largest">الأكبر حجماً</string>
+    <string name="sort_smallest">الأصغر حجماً</string>
+    <string name="sort_az">أبجدياً</string>
+
+    <!-- Selection Tray -->
+    <string name="selected_count_format">%1$d ملف محدد · %2$s</string>
+    <string name="preserve_quality_note">يتم الحفاظ على الجودة الأصلية بدون ضغط تلقائي</string>
+
+    <!-- Permissions (Arabic clear explanations) -->
+    <string name="perm_media_title">إذن الوصول إلى الوسائط</string>
+    <string name="perm_media_desc">يحتاج SPEEDORA إلى إذن قراءة الصور أو الفيديو أو الصوتيات لعرض ملفات جهازك الحقيقية وإرسالها. لن يتم جمع أو رفع أي ملف إلى الإنترنت.</string>
+    <string name="perm_nearby_title">إذن اكتشاف الأجهزة اللاسلكية القريبة</string>
+    <string name="perm_nearby_desc">مطلوب لاكتشاف الأجهزة القريبة عبر Wi-Fi Direct أو الشبكة المحلية دون استخدام الإنترنت.</string>
+    <string name="perm_camera_title">إذن الكاميرا لمسح رمز QR</string>
+    <string name="perm_camera_desc">تُستخدم الكاميرا فقط لقراءة رمز الاقتران المؤقت بين الجهازين ولا يتم تسجيل أو حفظ أي صور.</string>
+    <string name="perm_contacts_title">إذن جهات الاتصال لنقل الهاتف</string>
+    <string name="perm_contacts_desc">اختياري تماماً: يُطلب فقط عند اختيارك نقل جهات الاتصال كملف vCard إلى جهازك الجديد.</string>
+    <string name="perm_saf_prompt">لتصفح المستندات والمجلدات المخصصة بأمان دون صلاحيات نظام حساسة، اختر مجلداً عبر منتقي النظام.</string>
+
+    <!-- Discovery & Pairing -->
+    <string name="discovery_title">اكتشاف الأجهزة القريبة</string>
+    <string name="discovery_manual_ip">اتصال يدوي عبر IP والمنفذ</string>
+    <string name="discovery_bluetooth_note">ملاحظة: وضع البلوتوث مخصص للمساعدة في الاقتران والملفات الصغيرة فقط، وسرعته أقل بكثير من Wi-Fi Direct والشبكة المحلية.</string>
+    <string name="discovery_no_devices">لم يتم العثور على أجهزة قريبة حتى الآن. تأكد من فتح صفحة الاستلام على الجهاز الآخر أو استخدم رمز QR.</string>
+    <string name="sas_verify_title">التحقق الأمني المتبادل (SAS)</string>
+    <string name="sas_verify_desc">تأكد من تطابق رمز التحقق المكون من 6 أرقام على الجهازين قبل الموافقة على الجلسة المشفرة (ECDH P-256 + AES-256-GCM):</string>
+
+    <!-- Transfer States -->
+    <string name="state_connecting">جاري الاتصال والتشفير…</string>
+    <string name="state_awaiting_approval">بانتظار موافقة المستلم…</string>
+    <string name="state_sending">جاري الإرسال</string>
+    <string name="state_receiving">جاري الاستلام</string>
+    <string name="state_verifying">جاري التحقق من سلامة الملف (SHA-256)…</string>
+    <string name="state_paused">تم الإيقاف المؤقت</string>
+    <string name="state_completed">اكتمل النقل بنجاح وتم التحقق</string>
+    <string name="state_failed">تعذر إكمال النقل</string>
+    <string name="state_cancelled">تم إلغاء النقل</string>
+
+    <!-- Notifications -->
+    <string name="notif_channel_name">نقل الملفات في SPEEDORA</string>
+    <string name="notif_channel_desc">يعرض تقدم النقل النشط وحالة الاكتمال أو الفشل</string>
+
+    <!-- Migration -->
+    <string name="migration_restriction_note">وفق قيود أمان أندرويد، ينقل SPEEDORA الصور والفيديو والصوتيات والمستندات والتنزيلات المحددة وجهات الاتصال (بموافقتك). لا يمكن استنساخ البيانات الخاصة المحمية للتطبيقات الأخرى بدون صلاحيات النظام.</string>
+
+    <!-- Settings -->
+    <string name="settings_language">اللغة</string>
+    <string name="settings_theme">المظهر</string>
+    <string name="settings_light">نهاري أبيض وأزرق</string>
+    <string name="settings_dark">ليلي داكن</string>
+    <string name="settings_reduced_motion">تقليل الحركة</string>
+    <string name="settings_battery_saver">وضع توفير البطارية</string>
+    <string name="settings_haptics">الاهتزاز التفاعلي</string>
+    <string name="settings_sounds">المؤثرات الصوتية</string>
+    <string name="settings_device_name">اسم هذا الجهاز</string>
+    <string name="settings_download_dir">مجلد الحفظ الافتراضي</string>
+    <string name="settings_incoming_approval">الموافقة على الاستلام الوارد</string>
+    <string name="settings_about">حول SPEEDORA</string>
+</resources>

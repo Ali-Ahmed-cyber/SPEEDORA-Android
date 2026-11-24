@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-files-path name="received_files" path="SpeedoraReceived/" />
+    <cache-path name="apk_exports" path="exported_apks/" />
+    <cache-path name="migration_vcards" path="migration/" />
+    <external-path name="downloads" path="Download/SPEEDORA/" />
+</paths>

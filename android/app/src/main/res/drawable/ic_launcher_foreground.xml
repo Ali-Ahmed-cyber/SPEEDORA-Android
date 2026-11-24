@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Outer wireless wave ring -->
+    <path
+        android:pathData="M30,54 A24,24 0 0,1 54,30"
+        android:strokeColor="#EAF3FF"
+        android:strokeWidth="4.2"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent" />
+    <path
+        android:pathData="M78,54 A24,24 0 0,1 54,78"
+        android:strokeColor="#EAF3FF"
+        android:strokeWidth="4.2"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent" />
+    <!-- Inner precision transmission arcs -->
+    <path
+        android:pathData="M38,54 A16,16 0 0,1 54,38"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4.2"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent" />
+    <path
+        android:pathData="M70,54 A16,16 0 0,1 54,70"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4.2"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent" />
+    <!-- Central kinetic transfer wing & security diamond -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M43,54 L54,43 L68,43 L57,54 L65,54 L54,65 L40,65 L51,54 Z" />
+    <path
+        android:fillColor="#EAF3FF"
+        android:pathData="M54,50.5 L57.5,54 L54,57.5 L50.5,54 Z" />
+</vector>

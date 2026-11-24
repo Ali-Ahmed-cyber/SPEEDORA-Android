@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SPEEDORA</string>
+    <string name="slogan">FASTER. SMARTER. CONNECTED.</string>
+    <string name="slogan_en">FASTER. SMARTER. CONNECTED.</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_send">Send</string>
+    <string name="nav_receive">Receive</string>
+    <string name="nav_files">Files</string>
+
+    <!-- Actions -->
+    <string name="action_send">Send</string>
+    <string name="action_receive">Receive</string>
+    <string name="action_continue">Continue</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_pause">Pause</string>
+    <string name="action_resume">Resume</string>
+    <string name="action_accept">Accept</string>
+    <string name="action_reject">Reject</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_select_all">Select All</string>
+    <string name="action_scan_qr">Scan QR</string>
+    <string name="action_show_qr">Show QR</string>
+    <string name="action_grant_permission">Grant Permission</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_rename">Rename</string>
+    <string name="action_share">Share</string>
+
+    <!-- Home -->
+    <string name="home_status_idle">Ready for direct local transfer</string>
+    <string name="home_status_discovering">Scanning for nearby devices…</string>
+    <string name="home_status_advertising">Visible for encrypted receiving</string>
+    <string name="home_status_connected">Connected to: %1$s</string>
+    <string name="home_measured_speed">Measured throughput: %1$s</string>
+    <string name="home_no_speed_yet">Actual speed displays during an active transfer</string>
+    <string name="home_quick_access">Quick Access</string>
+    <string name="home_recent_transfers">Recent Transfers</string>
+    <string name="home_trusted_devices">Trusted Devices</string>
+    <string name="home_no_recent_transfers">No transfer history recorded yet</string>
+    <string name="home_no_trusted_devices">No trusted devices added yet</string>
+
+    <!-- Quick Destinations -->
+    <string name="dest_apps">Apps</string>
+    <string name="dest_history">History</string>
+    <string name="dest_migration">Migration</string>
+    <string name="dest_favorites">Favorites</string>
+    <string name="dest_trusted">Trusted</string>
+    <string name="dest_settings">Settings</string>
+    <string name="dest_discovery">Discovery</string>
+
+    <!-- File Categories -->
+    <string name="cat_all">All Files</string>
+    <string name="cat_photos">Photos</string>
+    <string name="cat_videos">Videos</string>
+    <string name="cat_music">Music</string>
+    <string name="cat_apps">Apps / APK</string>
+    <string name="cat_documents">Documents</string>
+    <string name="cat_archives">Archives</string>
+    <string name="cat_downloads">Downloads</string>
+    <string name="cat_folders">Folders</string>
+    <string name="cat_recent">Recent</string>
+
+    <!-- Sorting & Search -->
+    <string name="search_files_hint">Search by file name…</string>
+    <string name="sort_newest">Newest first</string>
+    <string name="sort_oldest">Oldest first</string>
+    <string name="sort_largest">Largest first</string>
+    <string name="sort_smallest">Smallest first</string>
+    <string name="sort_az">A–Z</string>
+
+    <!-- Selection Tray -->
+    <string name="selected_count_format">%1$d selected · %2$s</string>
+    <string name="preserve_quality_note">Original quality preserved with zero automatic compression</string>
+
+    <!-- Permissions -->
+    <string name="perm_media_title">Media Access Permission</string>
+    <string name="perm_media_desc">SPEEDORA needs read access to photos, video, or audio to display your real files for transfer. Nothing is uploaded to any server.</string>
+    <string name="perm_nearby_title">Nearby Wireless Discovery Permission</string>
+    <string name="perm_nearby_desc">Required to discover nearby devices over Wi-Fi Direct or local Wi-Fi without internet access.</string>
+    <string name="perm_camera_title">Camera Permission for QR Pairing</string>
+    <string name="perm_camera_desc">Used solely to scan temporary session pairing QR codes; no images are stored.</string>
+    <string name="perm_contacts_title">Contacts Permission for Phone Migration</string>
+    <string name="perm_contacts_desc">Strictly optional: requested only if you choose to migrate contacts as a vCard file.</string>
+    <string name="perm_saf_prompt">To browse documents and folders safely without broad storage permissions, pick a directory using the Android system picker.</string>
+
+    <!-- Discovery & Pairing -->
+    <string name="discovery_title">Nearby Device Discovery</string>
+    <string name="discovery_manual_ip">Manual IP &amp; Port Connection</string>
+    <string name="discovery_bluetooth_note">Note: Bluetooth fallback is intended for pairing assistance and small files only; throughput is substantially lower than Wi-Fi Direct or LAN.</string>
+    <string name="discovery_no_devices">No nearby devices found yet. Open Receive on the target phone or pair using QR code.</string>
+    <string name="sas_verify_title">Mutual Security Verification (SAS)</string>
+    <string name="sas_verify_desc">Confirm the 6-digit code matches on both devices before approving the encrypted session (ECDH P-256 + AES-256-GCM):</string>
+
+    <!-- Transfer States -->
+    <string name="state_connecting">Connecting &amp; negotiating keys…</string>
+    <string name="state_awaiting_approval">Waiting for receiver approval…</string>
+    <string name="state_sending">Sending</string>
+    <string name="state_receiving">Receiving</string>
+    <string name="state_verifying">Verifying file integrity (SHA-256)…</string>
+    <string name="state_paused">Paused</string>
+    <string name="state_completed">Transfer completed &amp; verified</string>
+    <string name="state_failed">Transfer failed</string>
+    <string name="state_cancelled">Transfer cancelled</string>
+
+    <!-- Notifications -->
+    <string name="notif_channel_name">SPEEDORA File Transfers</string>
+    <string name="notif_channel_desc">Shows live transfer progress, completion, and error alerts</string>
+
+    <!-- Migration -->
+    <string name="migration_restriction_note">Due to Android security boundaries, SPEEDORA migrates photos, videos, audio, documents, selected downloads, and consented contacts. Protected private app data cannot be cloned without system privileges.</string>
+
+    <!-- Settings -->
+    <string name="settings_language">Language</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_light">White &amp; Royal Blue (Light)</string>
+    <string name="settings_dark">Midnight Navy (Dark)</string>
+    <string name="settings_reduced_motion">Reduced Motion</string>
+    <string name="settings_battery_saver">Battery-Saving Mode</string>
+    <string name="settings_haptics">Haptic Feedback</string>
+    <string name="settings_sounds">Sound Effects</string>
+    <string name="settings_device_name">Device Name</string>
+    <string name="settings_download_dir">Default Download Location</string>
+    <string name="settings_incoming_approval">Incoming Transfer Approval</string>
+    <string name="settings_about">About SPEEDORA</string>
+</resources>

@@ -1,0 +1,3 @@
+-keep class com.speedora.app.core.model.** { *; }
+-keep class com.speedora.app.data.network.QrPairingPayload { *; }
+-keepattributes *Annotation*,Signature,InnerClasses,EnclosingMethod

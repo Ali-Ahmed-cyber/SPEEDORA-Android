@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --speedora-white: #ffffff;
+    --speedora-royal: #1769d2;
+    --speedora-deep: #104fa8;
+    --speedora-navy: #102b50;
+    --speedora-soft: #eaf3ff;
+    --speedora-gray: #f4f7fc;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #102b50;
+    font-family: "Cairo", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  code, pre, .font-mono {
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  }
+}
